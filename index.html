@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>Countries</h1>
+    </header>
+    <main>
+        <form>
+            <label for="cmbContinents">Continent</label>
+            <select id="cmbContinents">
+                <option value="0"></option>
+                <option value="1">Europe</option>
+                <option value="2">America</option>
+            </select>        
+        </form>  
+        <section id="countries">
+        </section>
+    </main>    
+    <footer>
+        <p>
+            &copy; 2024 Arturo Mora-Rioja
+        </p>
+    </footer>
+    <template id="country">
+        <article class="countryCard">
+            <p>Name: <span class="name"></span></p>
+            <p>Size: <span class="size"></span> m<sup>2</sup></p>
+            <p>Population: <span class="population"></span></p>
+        </article>
+    </template>
+</body>
+</html>

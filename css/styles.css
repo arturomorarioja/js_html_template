@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+:root {
+    --colorTextPrimary: black;
+    --colorTextSecondary: floralwhite;
+
+    --colorPrimary: #20408A;
+    --colorSecondary: lightgrey;
+    --colorTertiary: whitesmoke;
+
+    --fontMain: 'Raleway', Arial, Helvetica, sans-serif;
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontMain);
+}
+  
+header {
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+}
+  
+main {
+    margin: 1rem 1rem 2rem 1rem;
+    padding: 0.5rem 1rem;
+    form > select {
+        font-size: 1.1rem;
+    }
+    #countries {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 1rem;
+        gap: 0.5rem;
+        .countryCard {
+            flex: 1 0 auto;
+            border: thin solid var(--colorPrimary);
+            border-radius: 0.5rem;            
+            padding: 1rem;
+            .name {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: center;
+}
